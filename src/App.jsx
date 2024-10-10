@@ -97,7 +97,7 @@ function keyhandle(e){
 if(e.key=="Enter"){
   weathersearch();
 }
-console.log(e.key);
+
 
 }
 const weathersearch=async ()=>{
@@ -106,7 +106,7 @@ const weathersearch=async ()=>{
     let url=`https://api.openweathermap.org/data/2.5/weather?q=${text}&appid=${apikey}&units=Metric`;
   setLoading(true);
   const result= await axios.get(url);
-  console.log(result);
+
   
   setPlace(result.data.name)  ;
   setCountry(result.data.sys.country);
@@ -123,7 +123,7 @@ const weathersearch=async ()=>{
     
     if(error.response.data.cod==404){
       setCnf(true);
-      console.log(error.response.data.message);
+   
     }
     
   }
