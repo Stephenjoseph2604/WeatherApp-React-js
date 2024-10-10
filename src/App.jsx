@@ -13,6 +13,7 @@ import snow from './assets/snow.png';
 import mist from './assets/mist.png'
 import humidity from './assets/humidity.png';
 import winding from './assets/wind.png';
+import night from './assets/night.png';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 const WeatherDetails = ({city,country,temp,latt,lang,hum,ws,icon}) => {
@@ -67,7 +68,7 @@ const[loading,setLoading]=useState(false);
 
 const weathericons={
   "01d":clear,
-  "01n":clear,
+  "01n":night,
   "02d":fewCloud,
   "02n":fewCloud,
   "03d":scatterCloud,
