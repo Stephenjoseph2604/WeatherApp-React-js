@@ -147,7 +147,7 @@ const weathersearch=async ()=>{
        {!loading && !cnf && <WeatherDetails city={place} country={country} temp={temp} latt={lattitude} lang={langitude} hum={hum} ws={ws} icon={icon}/>}
        
       <div className="copyright">
-        Design & Developed by <br />
+        Designed & Developed by <br />
         <a target='_blank' href="https://appsail-50022521443.development.catalystappsail.in/">Sj Developer</a>
       </div>
 
